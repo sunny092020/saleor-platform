@@ -64,9 +64,9 @@ $ git submodule update --remote
 
 You can find the latest version of Saleor, storefront and dashboard in their individual repositories:
 
-- https://github.com/saleor/saleor
-- https://github.com/saleor/saleor-dashboard
-- https://github.com/saleor/react-storefront
+- https://github.com/sunny092020/saleor
+- https://github.com/sunny092020/saleor-dashboard
+- https://github.com/sunny092020/react-storefront
 
 ## How to solve issues with lack of available space or build errors after update
 
