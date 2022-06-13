@@ -1,9 +1,0 @@
-[submodule "saleor"]
-	path = saleor
-	url = https://github.com/sunny092020/saleor.git
-[submodule "saleor-dashboard"]
-	path = saleor-dashboard
-	url = https://github.com/sunny092020/saleor-dashboard.git
-[submodule "react-storefront"]
-	path = react-storefront
-	url = https://github.com/sunny092020/react-storefront.git
