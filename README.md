@@ -24,30 +24,20 @@ $ git clone https://github.com/sunny092020/saleor-platform.git
 3. Go to the cloned directory:
 ```
 $ cd saleor-platform
+$ ./scripts/clone.sh
 ```
 
 4. Build the application:
 ```
-$ docker-compose build
+$ ./scripts/build.sh
 ```
 
 5. Apply Django migrations:
 ```
-$ docker-compose run --rm api python3 manage.py migrate
+$ ./scripts/init_data.sh
 ```
 
-6. Collect static files:
-```
-$ docker-compose run --rm api python3 manage.py collectstatic --noinput
-```
-
-7. Populate the database with example data and create the admin user:
-```
-$ docker-compose run --rm api python3 manage.py populatedb --createsuperuser
-```
-*Note that `--createsuperuser` argument creates an admin account for `admin@example.com` with the password set to `admin`.*
-
-8. Run the application:
+6. Run the application:
 ```
 $ docker-compose up
 ```
