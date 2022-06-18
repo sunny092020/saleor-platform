@@ -10,6 +10,8 @@ apt-get -y install \
     lsb-release \
     awscli
 
+apt install -y postgresql-client
+
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
 echo \
