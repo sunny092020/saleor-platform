@@ -28,9 +28,6 @@ services:
       - backend.env
     environment:
       - JAEGER_AGENT_HOST=jaeger
-      - STOREFRONT_URL=http://localhost:3001/
-      - DASHBOARD_URL=http://localhost:9000/
-      - ALLOWED_HOSTS=localhost,api
 
   db:
     image: library/postgres:13-alpine

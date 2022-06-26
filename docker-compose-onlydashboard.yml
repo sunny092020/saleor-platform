@@ -1,0 +1,25 @@
+version: "3.4"
+
+services:
+  dashboard:
+    build:
+      context: ./saleor-dashboard
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - 9000:9000
+    restart: unless-stopped
+    volumes:
+      - ./saleor-dashboard/:/app:cached
+      - /app/node_modules/
+    command: npm start -- --host 0.0.0.0
+
+volumes:
+  saleor-db:
+    driver: local
+  saleor-redis:
+    driver: local
+  saleor-media:
+
+networks:
+  saleor-backend-tier:
+    driver: bridge
