@@ -1,0 +1,3 @@
+set -e;
+
+docker-compose run --rm api py.test
